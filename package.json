@@ -1,0 +1,25 @@
+{
+  "name": "ssf-day04-cart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niliaaa/ssf-day04-cart.git"
+  },
+  "author": "Ai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niliaaa/ssf-day04-cart/issues"
+  },
+  "homepage": "https://github.com/niliaaa/ssf-day04-cart#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0"
+  }
+}
