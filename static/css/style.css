@@ -1,4 +1,31 @@
 /* Containers */
+.main-wrapper {
+  /*justify-items: center;*/
+  min-height: 100%;
+}
 
+.page-header {
+  flex-shrink: 0;
+}
+
+
+.page-footer {
+  flex-shrink: 0;
+}
+
+.page-body {
+  flex-grow: 1;
+}
+
+
+.footer {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.footer p, a, a:hover {
+  color: #fff;
+  text-decoration: none;
+}
 
 /* Fonts & Headings */

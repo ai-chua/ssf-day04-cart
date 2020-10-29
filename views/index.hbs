@@ -1,1 +1,63 @@
-<h1>S H O P P I N G  C A R T</h1>
+<div class="col-4">
+  <h3 class="text-center">Add an Item</h3>
+  <form method="POST" action="/" class="">
+    <div class="form-row">
+      <div class="form-group col">
+        <label for="item">Item</label>
+        <input type="text" name="item" class="form-control" id="item" placeholder="Enter an item">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col">
+        <label for="quantity">Quantity</label>
+        <select class="form-control" name="quantity" id="quantity">
+          <option>Select</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <div class="form-group col">
+        <label for="unitprice">Unit Price</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="text" name="unitprice" class="form-control" id="unitprice" placeholder="3.75">
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <input type="hidden" name="cartState" value="{{ cartState }}">
+    </div>
+    <button type="submit" class="w-100 btn btn-dark">Submit</button>
+  </form>
+</div>
+
+<div class="col-8">
+  <table class="table mt-2">
+    <thead>
+      <tr>
+        <th scope="col">Item</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Unit Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each cart}}
+      <tr>
+        <td>{{this.item}}</td>
+        <td>{{this.quantity}}</td>
+        <td>{{this.unitPrice}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
